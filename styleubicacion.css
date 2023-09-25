@@ -1,0 +1,218 @@
+
+        @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+h1 {
+    font-size: 48px;
+    animation: fadeInUp 1.5s ease;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    animation: fadeInUp 1.5s ease 0.5s;
+}
+
+.nav-contenedor {
+    position: flex;
+    top: 0;
+    max-width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.logo img {
+    width: 130px;
+    height: 90px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+    animation: fadeInUp 1.5s ease 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #37cff5;
+}
+
+/*****************************************************/
+
+
+
+
+/*---------------------------------------------------------*/
+.footer {
+    background-color: #0e0e0e;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-contact h3,
+.footer-redes h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+
+.footer-direccion {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-redes {
+    flex: 1;
+}
+        /* Establecer un fondo oscuro para la página */
+        body {
+            background-color: #1d1d1d;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para el encabezado */
+        
+        /* Estilo para la sección de contacto */
+        #contacto {
+            background-color: #262626bd;
+            padding: 40px;
+            text-align: left;
+            width: 95%;
+
+        }
+
+        .contacto-container {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+        .contacto-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+     
+        /* Estilo para el mapa */
+        #map {
+            height: 400px;
+            width: 100%;            
+        }
+        /* Estilo para el contenedor del formulario */
+        .containerForm {
+            background-color: #404040;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin: auto;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        /* Encabezado del formulario */
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Estilo para los campos del formulario */
+        label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #ddd;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #444;
+            color: #fff;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        /* Estilo para el botón de enviar */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Estilo para el botón de enviar al pasar el mouse sobre él */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        
+
+        /* Añade más estilos según sea necesario */

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Equipo de Cómputo</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<link rel="stylesheet" type="text/css" href="styleubicacion.css">
+
+<body>
+    <div class="nav-contenedor">
+        <div class="logo">
+            <img src="https://img.freepik.com/vector-premium/plantilla-logotipo-computadora-tecnologia_23-2149203368.jpg"
+                alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mision.html">Mision</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="ubicacion.html">Ubicacion</a></li>
+                <li><a href="webmaster.html">WebMaster</a></li>
+            </ul>
+        </nav>
+    </div>
+
+  
+
+
+    <section id="contacto">
+        <div class="contacto-container">
+            <h2>Información de Contacto y Ubicación</h2>
+            <p>Puedes encontrarnos en la siguiente dirección:</p>
+            <address>
+                <p>123 Calle Principal</p>
+                <p>Ciudad, País</p>
+            </address>
+            <p>Teléfono: +123 456 789</p>
+            <p>Correo Electrónico: info@tuempresa.com</p>
+        </div>
+    </section>
+
+    <!-- Agregar el mapa interactivo -->
+    <section id="mapa">
+        <div id="map"></div>
+    </section>
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaXJ2YWxvIiwiYSI6ImNsbXdqdTdwYTByODQycHF3b2t3b2twb28ifQ.PMqtQBliMH_RwrgwQliqSQ'; // Reemplaza con tu propio token de Mapbox
+
+        // Crear un mapa con ubicación aleatoria
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-106.4833, 31.7333], // Ubicación aleatoria
+            zoom: 10
+        });
+    </script>
+</body>
+<div class="containerForm">
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+<body>
+    <div class="footer">
+        <div class="footer-contenido">
+            <div class="footer-direccion">
+                <h3>Creador</h3>
+                <p>Moreno Cabral Irvin Alonso</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Correo electrónico: morenoia@inovatech.com</p>
+            </div>
+            <div class="footer-redes">
+                <h3>Síguenos</h3>
+                <p href="#">Facebook</p>
+                <p href="#">Twitter</p>
+                <p href="#">Instagram</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

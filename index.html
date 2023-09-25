@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado Oscuro</title>
+    <style>
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://www.adslzone.net/app/uploads-adslzone.net/2022/02/webs-fondo-pantalla.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-contenido {
+            text-align: center;
+            z-index: 2;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 48px;
+            animation: fadeInUp 1.5s ease;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            animation: fadeInUp 1.5s ease 0.5s;
+        }
+
+        .nav-contenedor {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 3;
+        }
+
+        .logo img {
+            width: 130px;
+            height: 90px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+            animation: fadeInUp 1.5s ease 0.5s;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #37cff5;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="overlay"></div>
+        <div class="header-contenido">
+            <h1>Innovatech Irvin</h1>
+            <p>Los mejores equipos de computo</p>
+        </div>
+    </header>
+    <div class="nav-contenedor">
+        <div class="logo">
+            <img src="https://img.freepik.com/vector-premium/plantilla-logotipo-computadora-tecnologia_23-2149203368.jpg"
+                alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="mision.html">Mision</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="ubicacion.html">Ubicacion</a></li>
+                <li><a href="webmaster.html">WebMaster</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Contenido debajo de la imagen de fondo -->
+
+
+    <div class="caja">
+        <!-- Menú de sección izquierda -->
+        <div class="izquierda">
+            <h2>Categorías</h2>
+            <input type="text" id="mibusqueda" onkeyup="myFunction()" placeholder="Buscar..."
+                title="Escribe una categoría">
+                <ul id="mimenu">
+                    <li><a href="frmclientes.html">Formulario Clientes</a></li>
+                    <li><a href="tblclientes.html">Tabla Clientes</a></li>
+                    <li><a href="frmproductos.html">Formulario Productos</a></li>
+                    <li><a href="tblproductos.html">Tabla Productos</a></li>
+                    <li><a href="frmpedidos.html">Formulario Pedidos</a></li>
+                    <li><a href="tblpedidos.html">Tabla Pedidos</a></li>
+                    <li><a href="frmventas.html">Formulario Ventas</a></li>
+                    <li><a href="tblventas.html">Tabla Ventas</a></li>
+                    <li><a href="frmempleados.html">Formulario Empleados</a></li>
+                    <li><a href="tblempleados.html">Tabla Empleados</a></li>
+                </ul>
+        </div>
+        <style>
+            /* Contenedor principal */
+            /* Contenedor principal */
+            body {
+                background-color: #000000e7;
+            }
+
+            .caja {
+                display: flex;
+                justify-content: space-between;
+                background-color: #d9d7d7;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                margin: 20px;
+                padding: 20px;
+                margin-top: 2%;
+                /* Cambia o elimina esta línea para ajustar el margen superior según tus necesidades */
+            }
+
+            /* Menú de la sección izquierda */
+            .izquierda {
+                width: 25%;
+                padding: 20px;
+                background-color: #1b1b1b;
+                color: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .izquierda h2 {
+                margin-top: 0;
+                font-size: 24px;
+            }
+
+            /* Estilos para el menú desplegable */
+            #mibusqueda {
+                width: 95%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            #mimenu {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            #mimenu li {
+                margin-bottom: 10px;
+            }
+
+            #mimenu a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 25px;
+                display: block;
+                padding: 5px;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            #mimenu a:hover {
+                background-color: #323232;
+                color: #fff;
+            }
+
+            /* Contenido central */
+            .derecha {
+                width: 70%;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Estilos para los formularios */
+           
+
+            .form__fieldset {
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
+
+            .form__label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #000000;
+                font-size: 20px;
+            }
+
+            .form__textinput,
+            .form__textarea {
+                width: 96%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .form__submit {
+                background-color: #1f2021;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .form__submit:hover {
+                background-color: #333;
+            }
+        </style>
+        <!-- Contenido central -->
+        <div class="derecha">
+            <div class="center">
+                <h2>Innovatech Irvin</h2>
+            </div>
+            <h2>Clientes</h2>
+
+            <!-- Formulario de Clientes -->
+            <form action="#" method="post">
+
+                <fieldset class="form__fieldset">
+                    <div class="form__row">
+                        <label class="form__label" for="name">idCliente</label>
+                        <input class="form__textinput" name="name" id="name" type="number">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="email">nombre</label>
+                        <input class="form__textinput" name="email" id="email" type="email" required>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="message">apellido</label>
+                        <textarea class="form__textarea" name="message" id="message" required></textarea>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="message">correoElectronico</label>
+                        <textarea class="form__textarea" name="message" id="message" required></textarea>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="message">contrasena</label>
+                        <textarea class="form__textarea" name="message" id="message" required></textarea>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="message">direccion</label>
+                        <textarea class="form__textarea" name="message" id="message" required></textarea>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="message">telefono</label>
+                        <textarea class="form__textarea" name="message" id="message" required></textarea>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="message">fecha de nacimiento</label>
+                        <input class="form__textinput" name="name" id="name" type="date">
+                    </div>
+                    <button class="form__submit" name="submit" type="submit" id="contact-submit">Enviar Mensaje</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <style>
+      
+
+        .footer {
+            background-color: #0e0e0e;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .footer-contenido {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-contact h3,
+        .footer-redes h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .footer-contact p {
+            margin: 5px 0;
+        }
+
+
+        .footer-direccion {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .footer-redes {
+            flex: 1;
+        }
+
+
+    </style>
+    <title>InovaTech - Venta de Computadoras</title>
+    </head>
+
+    <body>
+        <div class="footer">
+            <div class="footer-contenido">
+                <div class="footer-direccion">
+                    <h3>Creador</h3>
+                    <p>Moreno Cabral Irvin Alonso</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Correo electrónico: morenoia@inovatech.com</p>
+                </div>
+                <div class="footer-redes">
+                    <h3>Síguenos</h3>
+                    <p href="#">Facebook</p>
+                    <p href="#">Twitter</p>
+                    <p href="#">Instagram</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+</html>

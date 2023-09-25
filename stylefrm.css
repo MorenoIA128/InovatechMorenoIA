@@ -1,0 +1,242 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://www.adslzone.net/app/uploads-adslzone.net/2022/02/webs-fondo-pantalla.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-contenido {
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+}
+
+h1 {
+    font-size: 48px;
+    animation: fadeInUp 1.5s ease;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    animation: fadeInUp 1.5s ease 0.5s;
+}
+
+.nav-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.logo img {
+    width: 130px;
+    height: 90px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+    animation: fadeInUp 1.5s ease 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #37cff5;
+}
+/*------------------------------------------*/
+ /* Contenedor principal */
+            /* Contenedor principal */
+            body {
+                background-color: #000000e7;
+            }
+
+            .caja {
+                display: flex;
+                justify-content: space-between;
+                background-color: #d9d7d7;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                margin: 20px;
+                padding: 20px;
+                margin-top: 2%;
+                /* Cambia o elimina esta línea para ajustar el margen superior según tus necesidades */
+            }
+
+            /* Menú de la sección izquierda */
+            .izquierda {
+                width: 25%;
+                padding: 20px;
+                background-color: #1b1b1b;
+                color: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .izquierda h2 {
+                margin-top: 0;
+                font-size: 24px;
+            }
+
+            /* Estilos para el menú desplegable */
+            #mibusqueda {
+                width: 95%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            #mimenu {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            #mimenu li {
+                margin-bottom: 10px;
+            }
+
+            #mimenu a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 25px;
+                display: block;
+                padding: 5px;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            #mimenu a:hover {
+                background-color: #323232;
+                color: #fff;
+            }
+
+            /* Contenido central */
+            .derecha {
+                width: 70%;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Estilos para los formularios */
+           
+
+            .form__fieldset {
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
+
+            .form__label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #000000;
+                font-size: 20px;
+            }
+
+            .form__textinput,
+            .form__textarea {
+                width: 96%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .form__submit {
+                background-color: #1f2021;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .form__submit:hover {
+                background-color: #333;
+            }
+            /*---------------------------------------*/
+            
+        .footer {
+            background-color: #0e0e0e;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .footer-contenido {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-contact h3,
+        .footer-redes h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .footer-contact p {
+            margin: 5px 0;
+        }
+
+
+        .footer-direccion {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .footer-redes {
+            flex: 1;
+        }
